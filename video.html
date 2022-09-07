@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/1422277c/img/favicon.ico" type="image/x-icon">
+    
+    <title>YouTube</title>
+    <style>
+        iframe{
+            width: 900px;
+            height: 600px;
+            margin-top: 120px;
+            margin-left: 100px;
+        }
+        
+    </style>
+</head>
+<body onload="playVideo()">
+    <nav id="navbar">
+        <div>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <img
+            id="youtube-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png"
+            alt="youtube"
+            height="20px"
+          />
+          <!-- <i class="fa fa-youtube-play" aria-hidden="true"
+            ><span>YouTube</span></i
+          > -->
+          <p id="logo-text">YouTube<span>IN</span></p>
+        </div>
+        <div>
+          <input type="text" id="search-input" placeholder="Search" />
+          <button id="search-btn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <i class="fa fa-microphone" aria-hidden="true"></i>
+        </div>
+        <div>
+          <button id="create-video">
+            <i
+              class="fa fa-video-camera"
+              id="video-camera"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <button id="youtube-apps">
+            <i class="fa fa-th" id="yt-apps-icon" aria-hidden="true"></i>
+          </button>
+          <button id="notification">
+            <i class="fa fa-bell-o" id="notifi-icon" aria-hidden="true"></i>
+          </button>
+          <button id="account-logo">S</button>
+        </div>
+        <div></div>
+      </nav>
+
+    <iframe
+    width="560"
+    height="315"
+    id="play_video"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script >
+        let playVideo=()=>{
+            let video=JSON.parse(localStorage.getItem("video"))
+            console.log(video);
+            let id=video.id.videoId
+            let play_video=document.getElementById("play_video")
+            play_video.src=`https://www.youtube.com/embed/${id}`
+        }
+    </script>
+</body>
+</html>

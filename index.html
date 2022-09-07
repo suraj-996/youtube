@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.youtube.com/s/desktop/1422277c/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>YouTube</title>
+    <style></style>
+  </head>
+  <body>
+    <!-- <button onclick="sort()">Sort</button> -->
+    <nav id="navbar">
+      <div>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <img
+          id="youtube-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png"
+          alt="youtube"
+          height="20px"
+        />
+        <!-- <i class="fa fa-youtube-play" aria-hidden="true"
+          ><span>YouTube</span></i
+        > -->
+        <p id="logo-text">YouTube<span>IN</span></p>
+      </div>
+      <div>
+        <input type="text" id="search-input" placeholder="Search" />
+        <button id="search-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <i class="fa fa-microphone" aria-hidden="true"></i>
+      </div>
+      <div>
+        <button id="create-video">
+          <i
+            class="fa fa-video-camera"
+            id="video-camera"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <button id="youtube-apps">
+          <i class="fa fa-th" id="yt-apps-icon" aria-hidden="true"></i>
+        </button>
+        <button id="notification">
+          <i class="fa fa-bell-o" id="notifi-icon" aria-hidden="true"></i>
+        </button>
+        <button id="account-logo">S</button>
+      </div>
+      <div></div>
+    </nav>
+    <div id="youtube">
+      <div id="side">
+        <!-- <button onclick="filter()" id="filter">Filter</button> -->
+        <div>
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <span>Home</span>
+        </div>
+        <div>
+          <i class="fa fa-compass" aria-hidden="true"></i>
+          <span>Explore</span>
+        </div>
+        <div>
+          <i class="fa fa-play" aria-hidden="true"></i>
+          <span>Shorts</span>
+        </div>
+        <div>
+          <i class="fa fa-television" aria-hidden="true"></i>
+          <span>Subscriptions</span>
+        </div>
+        <hr />
+        <div>
+          <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+          <span>Library</span>
+        </div>
+        <div>
+          <i class="fa fa-history" aria-hidden="true"></i>
+          <span>History</span>
+        </div>
+        <div>
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <span>Watch Later</span>
+        </div>
+        <div>
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <span>Liked Videos</span>
+        </div>
+        <hr />
+        <h3>SUBSCRIPTIONS</h3>
+        <div>
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <span>Learn With Suraj</span>
+        </div>
+        <div>
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <span>Browse Channels</span>
+        </div>
+        <hr />
+        <h3>MORE FROM YOUTUBE</h3>
+
+        <div>
+          <i class="fa fa-film" aria-hidden="true"></i>
+          <span>Movies</span>
+        </div>
+        <div>
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          <span>Learning</span>
+        </div>
+        <div>
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <span>Sport</span>
+        </div>
+        <hr />
+        <div>
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <span>Settings</span>
+        </div>
+        <div>
+          <i class="fa fa-flag-o" aria-hidden="true"></i>
+          <span>Report History</span>
+        </div>
+        <div>
+          <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+          <span>Help</span>
+        </div>
+        <div>
+          <i class="fa fa-comment-o" aria-hidden="true"></i>
+          <span>Send Feedback</span>
+        </div>
+      </div>
+      <div id="container"></div>
+    </div>
+
+    <!-- <div></div> -->
+    <script src="youtube.js"></script>
+  </body>
+</html>
